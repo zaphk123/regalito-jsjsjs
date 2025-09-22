@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para Mi Mar 🌼</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: linear-gradient(135deg, #fffbe6 0%, #ffe066 100%);
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 560px;
+            margin: 60px auto 0 auto;
+            /* Fondo pastel rosa suave con un degradado que combina con amarillo */
+            background: linear-gradient(135deg, #ffe6f7 0%, #fffbe6 60%, #ffe066 100%);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(230, 190, 80, 0.21);
+            padding: 32px;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            color: #d4b800;
+            margin-bottom: 16px;
+            font-size: 2.4em;
+        }
+        .flowers {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 24px;
+            position: relative;
+        }
+        .flower-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            opacity: 0;
+            transform: scale(0.5);
+            animation: appearFlower 0.8s cubic-bezier(0.4, 0.7, 0.2, 1.2) forwards;
+            background: transparent;
+        }
+        .flower-img:nth-child(1) { animation-delay: 0.2s; }
+        .flower-img:nth-child(2) { animation-delay: 0.7s; }
+        .flower-img:nth-child(3) { animation-delay: 1.2s; }
+        .flower-img:nth-child(4) { animation-delay: 1.7s; }
+        @keyframes appearFlower {
+            0% { opacity: 0; transform: scale(0.5); }
+            70% { opacity: 1; transform: scale(1.1);}
+            100% { opacity: 1; transform: scale(1);}
+        }
+        p {
+            color: #6f5b0b;
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        .love {
+            font-size: 2em;
+            color: #ffb800;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInLove 1s forwards;
+            animation-delay: 2.2s;
+        }
+        @keyframes fadeInLove {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Animación de corazones */
+        .heart {
+            position: absolute;
+            font-size: 2em;
+            opacity: 0.7;
+            animation: floatHeart 5s infinite linear;
+        }
+        .heart.h1 { left: 10%; top: 60px; animation-delay: 0s; color: #f88;}
+        .heart.h2 { left: 50%; top: 40px; animation-delay: 1s; color: #ffb3c6;}
+        .heart.h3 { left: 80%; top: 30px; animation-delay: 2s; color: #f66;}
+        .heart.h4 { left: 25%; top: 120px; animation-delay: 3s; color: #ff99a6;}
+        .heart.h5 { left: 65%; top: 110px; animation-delay: 4s; color: #fbb;}
+        @keyframes floatHeart {
+            0% { transform: translateY(0) scale(1);}
+            20% { transform: translateY(-20px) scale(1.15);}
+            40% { transform: translateY(-40px) scale(1);}
+            60% { transform: translateY(-60px) scale(0.9);}
+            80% { transform: translateY(-80px) scale(1.2);}
+            100% { transform: translateY(-100px) scale(1);}
+        }
+        /* Mensaje sorpresa */
+        .special-message {
+            opacity: 0;
+            transition: opacity 1.5s;
+            font-size: 1.3em;
+            color: #d4b800;
+            margin-top: 36px;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        .special-message.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Para Mi Hermosa Acompañante De Vida <4 </h1>
+        <div class="flowers">
+            <img class="flower-img" src="https://imgs.search.brave.com/NX2JjlnkUz-smE9I0A1cM0RLqfT51xKtQh62akgQroE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzIyMjgyOS9p/c29sYXRlZC9wcmV2/aWV3LzFlNWFlNzll/ZmZmNDY1M2U4ZGI4/ZTEwMDU5YjRkZDc4/LWZsb3Jlcy1hbWFy/aWxsYXMtcmFtYS1p/bHVzdHJhY2lvbi1m/bG9yZXMucG5n" alt="Flor amarilla">
+            <img class="flower-img" src="https://imgs.search.brave.com/WRHTBm5liVbYv3ArLacmzjIuTuFJKQKa3QlchIHURv8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzI3OTA5MC9p/c29sYXRlZC9wcmV2/aWV3LzI4YzNiM2Ri/Yjg2M2M0YmMyZGUz/MzhjYjRiZmQxMjI4/LWZsb3Jlcy1hbWFy/aWxsYXMtZGlidWph/ZGFzLWEtbWFuby5w/bmc" alt="Flor amarilla">
+            <img class="flower-img" src="https://imgs.search.brave.com/RQhiuOEQ_ce_RYJ4G2QVlMOkFNa0qF13Bq9oovjQp2U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzM0NTQzNi9p/c29sYXRlZC9wcmV2/aWV3L2EzNWUzYTNm/M2E1ZGYxZGRlYTNj/ZjBkZWJkMTM0ZDE4/LW1hcmNvLWNvbi1m/bG9yZXMteS1ob2ph/cy1hbWFyaWxsYXMu/cG5n" alt="Flor amarilla">
+            <img class="flower-img" src="https://imgs.search.brave.com/pGNWmuvqLaGttNl6vldBr75-AeAObnzt3C8wS5pH1_0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzI3NjU4Mi9p/c29sYXRlZC9wcmV2/aWV3L2QzYmJhZWE4/MWYwMmE3Y2M3OTA2/ODViMzdlOGU2YmZm/LWRpc2Vuby1kZS1m/bG9yZXMtYW1hcmls/bGFzLXNlbWktcGxh/bm8ucG5n" alt="Flor amarilla">
+            <span class="heart h1">❤</span>
+            <span class="heart h2">❤</span>
+            <span class="heart h3">❤</span>
+            <span class="heart h4">❤</span>
+            <span class="heart h5">❤</span>
+        </div>
+        <p>
+            Así como estas lindas flores amarillas,<br>
+            iluminas mi vida cada día.<br>
+            Puede que este no sea el mejor regalo que te pudieron dar hoy, pero igual quiero expresarme a travez de mi conocimineto y regalarte esta pagina que hice desde 0 <3 
+
+        </p>
+        <div class="love">💛TE AMO MAR🌻</div>
+        <div id="special" class="special-message">
+            Eres mi sol, mi alegría y mi paz. <br>
+            Gracias por existir y por ser tan maravillosa.<br>
+            Te amo con todo mi corazón. 💖
+        </div>
+    </div>
+    <script>
+        // Hace aparecer el mensaje especial después de la animación de las flores
+        setTimeout(function(){
+            document.getElementById('special').classList.add('visible');
+        }, 3300);
+    </script>
+</body>
+</html>
